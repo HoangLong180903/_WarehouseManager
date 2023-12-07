@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Trang Chủ">
+        <menu>
+            <item
+                android:id="@+id/action_home"
+                android:icon="@drawable/pngtree_cartoon_house_icon_download_image_2292329_removebg_preview"
+                android:title="Màn Hình Chính"/>
+
+        </menu>
+    </item>
+    <item android:title="Quản Lý">
+        <menu>
+            <item
+                android:id="@+id/action_LoaiSP"
+                android:title="Loại Sản Phẩm"
+                android:icon="@drawable/image_7"/>
+            <item
+                android:id="@+id/action_SP"
+                android:title="Sản Phẩm"
+                android:icon="@drawable/image_8"/>
+            <item
+                android:id="@+id/action_NV"
+                android:title="Nhân Viên"
+                android:icon="@drawable/staff"/>
+            <item
+                android:id="@+id/action_NCC"
+                android:title="Nhà Cung Cấp"
+                android:icon="@drawable/business_icon_400x400_removebg_preview"/>
+            <item
+                android:id="@+id/action_KH"
+                android:title="Khách Hàng"
+                android:icon="@drawable/client"/>
+        </menu>
+    </item>
+    <item android:title="Phiếu Kho"
+        >
+        <menu>
+            <item
+                android:id="@+id/action_hoaDonNhapKho"
+                android:title="Phiếu Nhập Kho"
+                android:icon="@drawable/image_25"/>
+            <item
+                android:id="@+id/action_hoaDonXuatKho"
+                android:title="Phiếu Xuất Kho"
+                android:icon="@drawable/image_24"/>
+
+        </menu>
+    </item>
+    <item android:title="Thống Kê"
+        >
+        <menu>
+            <item
+                android:id="@+id/action_baoCaoThongKe"
+                android:title="Báo Cáo Thống Kê"
+                android:icon="@drawable/image_17"/>
+        </menu>
+    </item>
+    <item android:title="Khác">
+        <menu>
+            <item
+                android:id="@+id/action_TTCN"
+                android:title="Thông Tin Cá Nhân"
+                android:icon="@drawable/_857722"/>
+            <item
+                android:id="@+id/action_dangXuat"
+                android:title="Đăng Xuất"
+                android:icon="@drawable/_094700_removebg_preview"/>
+        </menu>
+    </item>
+</menu>
