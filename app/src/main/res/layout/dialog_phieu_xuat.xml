@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_custom_dialog"
+    android:gravity="center_horizontal"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/phieuxuat_imageBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/baseline_arrow_back_ios_24"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Tạo Phiếu Xuất"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:id="@+id/phieuxuat_tvTitle"
+                android:layout_marginRight="30dp"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:endIconDrawable="@drawable/baseline_date_range_24"
+            app:endIconMode="custom"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phieuxuat_edNgayXuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ngày Xuất" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khách Hàng*"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="7dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_dropdown">
+            <Spinner
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/phieuxuat_spKhachHang"
+                android:spinnerMode="dialog"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhân Viên*"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="7dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_dropdown">
+            <Spinner
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/phieuxuat_spNhanVien"
+                android:spinnerMode="dialog"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sản Phẩm*"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="7dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_dropdown">
+            <Spinner
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/phieuxuat_spSanPham"
+                android:spinnerMode="dropdown"
+                />
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số lượng xuất"
+                android:inputType="number"
+                android:id="@+id/phieuxuat_edsoLuong">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="7dp"
+            android:visibility="gone"
+            android:id="@+id/phieuxuat_checkSoLuong"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_flash_on_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng tồn kho không đủ"
+                android:layout_gravity="center"
+                android:textColor="#67726B"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="10dp"
+            app:startIconDrawable="@drawable/baseline_discount_24"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Thuế"
+                android:inputType="number"
+                android:drawableEnd="@drawable/baseline_percent_24"
+                android:id="@+id/phieuxuat_edThue">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Tổng tiền"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 VNĐ"
+                android:textColor="#31B95F"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/phieuxuat_tvTongTien"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoàn tất"
+            android:layout_margin="10dp"
+            android:backgroundTint="#67726B"
+            android:id="@+id/phieuxuat_btnSave"/>
+    </LinearLayout>
+</ScrollView>

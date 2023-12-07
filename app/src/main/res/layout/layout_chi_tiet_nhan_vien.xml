@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="#f5f5f5"
+    >
+
+    <TextView
+        android:id="@+id/ctphieu_tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#31B95F"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:text="Thông Tin Nhân Viên"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/ctnhanvien_tenNhanVien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="Tên đơn vị: "
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ctnhanvien_namSinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="Năm sinh: "
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textColor="#31B95F"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/ctnhanvien_tenTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="Tài khoản"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="Mật khẩu:"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/ctnhanvien_matKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="123456"
+                android:textSize="14dp"
+                android:inputType="textPassword"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/ctnhanvien_chucVu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="Chức vụ"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ctnhanvien_trangThai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="Trạng thái: "
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textColor="#31B95F"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset pasword"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        android:backgroundTint="#67726B"
+        android:id="@+id/ctnhanvien_btnResetMatKhau"/>
+</LinearLayout>
